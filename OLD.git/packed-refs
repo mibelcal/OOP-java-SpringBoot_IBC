@@ -1,0 +1,18 @@
+# pack-refs with: peeled fully-peeled sorted 
+31b523f75b994c1b34f35e12efcefebf69309490 refs/remotes/origin/basic
+13d8943b48e846803002affdb1b77f3763c2630f refs/remotes/origin/ed4
+7e08b6d2454f1c4b78dccc8a3c1b1bd5daedcf6c refs/remotes/origin/main
+76a045412d260b98db01ba79b8f67e93116699b4 refs/remotes/origin/maquinacafe-maven
+0f604f63e191e92107eb0c07a3204d7e98676921 refs/remotes/origin/maven
+19bbf6b024fab1bdd831ea16ca1f1dc44a2daf88 refs/remotes/origin/patrones
+56df4698470093c41b6d426c36db598440be7126 refs/remotes/origin/persistence-jdbc
+2b8300d0cef9cfb43683976766c2ead605c73ba2 refs/remotes/origin/persistence-spring-jpa
+9a759823035fd6fc15f6bf9b92f60c8cba7f667e refs/remotes/origin/reto1
+023da51b49ed2e49d2a4b0a00ca81673ed6eee5f refs/remotes/origin/reto1-maven
+dd856343fe516eaee1ad9f7dedb4911acd5d451e refs/remotes/origin/reto1-sb
+773cbeb7ff3ade18aa50d83d06e3db269338f566 refs/remotes/origin/reto2
+c4e93551ed7ca8d38e3c10f5cce31b8201a87519 refs/remotes/origin/reto2-sb
+ec04ada66c0ad4befe635dac92af57f1b6de6592 refs/remotes/origin/spring5
+ff84d66fe4471b384aa4c57baf3f9f76e1d11c2f refs/remotes/origin/spring5-sol
+61d6a22dfd3b93056152db063d3c1e6959447c5a refs/remotes/origin/springboot
+5539a6185d456db22c0767b7550dd71d66b57621 refs/remotes/origin/v1
