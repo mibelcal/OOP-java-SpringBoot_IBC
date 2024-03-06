@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: AccountService_IBC
+  profiles.active: testing
+
+---
+spring:
+  sql.init.mode: never  # avoid loading
+  config.activate.on-profile: testing
+  devtools.restart.enabled: true
+  datasource:
+    url: "jdbc:mysql://127.0.0.1:3306/accounts_db"
+    driverClassName: com.mysql.cj.jdbc.Driver
+    username: account_user
+    password: acc123
+  jpa:
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    hibernate:
+      ddl-auto: update
+      generate-ddl: true
+    defer-datasource-initialization: true
+
+server:
+  #  servlet.contextPath: /api
+  port: 9943

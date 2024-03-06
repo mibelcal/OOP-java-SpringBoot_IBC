@@ -11,27 +11,32 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.AutoConfigureTestEntityManager;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManager;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
+import javax.transaction.Transactional;
+import java.time.Instant;
+import java.util.Date;
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-@ExtendWith(SpringExtension.class)
-@DataJpaTest()
-@ComponentScan(basePackages = {"com.microcompany.accountsservice_IBC.AccountService_IBC.persistence"})
-@AutoConfigureTestEntityManager
+//@ExtendWith(SpringExtension.class)
+//@DataJpaTest()
+//@ComponentScan(basePackages = {"com.microcompany.accountsservice_IBC.AccountService_IBC.persistence"})
+//@AutoConfigureTestEntityManager
+@SpringBootTest
 class CustomerRepositoryTest {
 
     private static final Logger logger = LoggerFactory.getLogger(CustomerRepositoryTest.class);
 
-    @Autowired
-    private TestEntityManager entityManager;
+//    @Autowired
+//    private TestEntityManager entityManager;
 
     @Autowired
-    private CustomerRepository jpaRepo;
+    private CustomerRepository jpaCustomerRepo;
 
 //    @Test
 //    void addWithAccounts() throws SQLException {
@@ -82,19 +87,18 @@ class CustomerRepositoryTest {
 //    void findByName() {
 //    }
 //
-//    @Test
-//    void save() {
-//        // given
-//        Product aProduct = new Product(null, "Another Fake Product", "123-123-1234");
-//
-//        // when
-//        jpaRepo.save(aProduct);
-//
-//        System.out.println(aProduct);
-//
-//        // then
-//        assertThat(aProduct.getId()).isGreaterThan(0);
-//    }
+@Test
+    void save() {
+        // given
+    Customer aCustomer = new Customer(null, "Maria", "Maria@yahoo.es",null);
+        // when
+        jpaCustomerRepo.save(aCustomer);
+
+    //System.out.println("cuenta creada:" + aAccount);
+
+        // then
+        assertThat(aCustomer.getId()).isGreaterThan(0);
+    }
 //
 //    @Test
 //    void deleteById() {

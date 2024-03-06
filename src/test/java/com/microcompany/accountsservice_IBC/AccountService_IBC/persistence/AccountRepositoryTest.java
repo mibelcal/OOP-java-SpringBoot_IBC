@@ -57,7 +57,7 @@ class AccountRepositoryTest {
     @Test
     void save() {
         // given
-        Account aAccount = new Account(null, "Cta test", new Date(2024 - 03 - 05), 1000, 1L, null);
+        Account aAccount = new Account(null, "Cta test", Date.from(Instant.now()), 1000, 1L, null);
 
         // when
         jpaRepo.save(aAccount);
